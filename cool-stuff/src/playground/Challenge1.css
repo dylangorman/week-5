@@ -1,0 +1,14 @@
+div {
+  display: flex;
+}
+.Slide {
+  display: flex;
+  border: solid black;
+  flex-direction: column;
+  padding: 20px;
+}
+
+div.Clock {
+  display: flex;
+  flex-direction: row;
+}
