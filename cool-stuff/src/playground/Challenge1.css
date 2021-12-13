@@ -12,3 +12,7 @@ div.Clock {
   display: flex;
   flex-direction: row;
 }
+
+.fa-regular fa-clock {
+  size: 40px;
+}
