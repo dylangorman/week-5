@@ -3,7 +3,7 @@ div {
 }
 .Slide {
   display: flex;
-  border: solid black;
+  /* border: solid black; */
   flex-direction: column;
   padding: 20px;
 }
@@ -15,4 +15,8 @@ div.Clock {
 
 .fa-regular fa-clock {
   size: 40px;
+}
+img {
+  width: 300px;
+  height: 200px;
 }

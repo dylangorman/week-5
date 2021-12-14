@@ -1,48 +1,52 @@
 import "./Challenge1.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import image1 from "../playground/bbc1.jpg";
+import image2 from "../playground/bbc2.jpg";
+import image3 from "../playground/bbc3.jpg";
+import image4 from "../playground/bbc4.jpg";
+
 const Challenge1 = () => {
   return (
     <div>
       <Slide
-        image="./bbc1.jpg"
+        url={image1}
         title="Don't Think pandemic is over Whitty warns"
         paragraph="Unlocking too quickly would lead to a substantial surge in infection, UK chief medical adviser says."
-        icon=""
+        // icon=""
         clock=" 2h | "
         type=" Health | "
-        comments=" yes "
+        comments=" comments "
       />
 
       <Slide
-        image="./bbc2.jpg"
+        url={image2}
         title="Pay rise was set to be 2.1% - NHS chief"
         paragraph="NHS England boss backs ministers
         over pay dispute but does not rule out a one-off bonus for workers."
-        icon=""
+        // icon=""
         clock="1h |"
         type="UK Politics |"
         comments=""
       />
       <Slide
-        image="./bbc3.jpg"
+        url={image3}
         title="Charity criticises Morgan's
         comments about Meghan"
         paragraph="Mental health charity Mind says it is
         disappointed by comments Piers
         Morgan made on Monday."
-        icon=""
+        // icon=""
         clock="2h |"
         type="Entertainment & Arts |"
         comments=""
       />
       <Slide
-        image="./bbc4.jpg"
+        url={image4}
         title="Unilever drops word 'normal'
         from beauty products"
         paragraph="The owner of Dove and Vaseline will
         remove the word from about 200
         products in a push for inclusivity."
-        icon=""
+        // icon=""
         clock="10m |"
         type="Business |"
         comments=""
@@ -53,11 +57,10 @@ const Challenge1 = () => {
 const Slide = (props) => {
   return (
     <div className="Slide">
-      <Image image={props.image} />
+      <img src={props.url} alt="" />
       <h3>{props.title}</h3>
       <p>{props.paragraph}</p>
       <div>
-        <FontAwesomeIcon icon="fa-regular fa-clock" />
         <Clock clock={props.clock} />
         <Type type={props.type} />
         <Comments comments={props.comments} />
@@ -66,12 +69,12 @@ const Slide = (props) => {
   );
 };
 
-const Image = (props) => {
-  return <img src={props.image} alt="" />;
-};
-const FontAwesomeIcon = (props) => {
-  return <p>{props.icon}</p>;
-};
+// const Image = (props) => {
+//   return <img src={props.image} alt="" />;
+// };
+// // const FontAwesomeIcon = (props) => {
+// //   return <p>{props.icon}</p>;
+// // };
 const Clock = (props) => {
   return <p>{props.clock}</p>;
 };
