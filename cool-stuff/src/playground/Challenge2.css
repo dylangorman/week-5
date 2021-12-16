@@ -1,0 +1,15 @@
+div {
+  display: flex;
+}
+.Slide {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+img {
+  border-radius: 8px;
+  width: 315px;
+}
+p {
+  font-family: sans-serif;
+}

@@ -7,12 +7,9 @@ const NumValue = () => {
   return (
     <div>
       <h1>{num}</h1>
-      <button onCLick={() => setNum(num + 1)}>add one</button>
-
-      {/* handler way  */}
-      <button onCLick={minusHandler}>minus one</button>
+      <button onClick={() => setNum(num + 1)}>add one</button>
+      <button onClick={minusHandler}>minus one</button>
     </div>
   );
 };
-
 export default NumValue;

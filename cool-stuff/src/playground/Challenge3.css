@@ -1,0 +1,12 @@
+div {
+  background-color: black;
+  display: flex;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  padding: 2px;
+  border-radius: 10px;
+}
